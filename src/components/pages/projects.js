@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
-import { Tabs, Tab, Grid, Cell, Card, CardTitle, CardText, CardActions, Button, CardMenu, IconButton } from 'react-mdl';
-import Contact from "./contact";
-
+import { Tabs, Tab, Cell, Card, CardTitle, CardText, CardActions, Button, CardMenu, IconButton } from 'react-mdl';
+import { Grid, GridRow as Row, GridColumn as Column } from "semantic-ui-react";
 
 class Projects extends Component {
 	constructor(props) {
@@ -85,23 +84,26 @@ class Projects extends Component {
 
 	render() {
 		return(
-			<div>
-				<Tabs activeTab={this.state.activeTab} onChange={(tabId) => this.setState({ activeTab: tabId })} ripple>
-					<Tab>React</Tab>
-					<Tab>Angular</Tab>
-					<Tab>VueJS</Tab>
-					<Tab>MongoDB</Tab>
-				</Tabs>
+			<Grid textAlign={"center"}>
+                <Row>
+                    <Column>
+                        Don't know how yet :(
+                    </Column>
+                    {/*<Tabs activeTab={this.state.activeTab} onChange={(tabId) => this.setState({ activeTab: tabId })} ripple>*/}
+                    {/*    <Tab>React</Tab>*/}
+                    {/*    <Tab>Angular</Tab>*/}
+                    {/*    <Tab>VueJS</Tab>*/}
+                    {/*    <Tab>MongoDB</Tab>*/}
+                    {/*</Tabs>*/}
+                </Row>
+				<Row >
+					<Column width={12}>
+						<div >{this.toggleCategories()}</div>
+					</Column>
+				</Row>
 
 
-				<Grid>
-					<Cell col={12}>
-						<div className="content">{this.toggleCategories()}</div>
-					</Cell>
-				</Grid>
-
-
-			</div>
+			</Grid>
 		)
 	}
 }

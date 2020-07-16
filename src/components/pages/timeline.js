@@ -1,8 +1,6 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
-import {
-	Grid, Card, Label, Icon, Divider,
-} from 'semantic-ui-react';
+import { Grid, Card, Label, Icon, Divider } from 'semantic-ui-react';
 import 'semantic-ui-css/semantic.min.css';
 
 import './style.css';

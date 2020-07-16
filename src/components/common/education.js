@@ -1,20 +1,20 @@
-import React, { Component } from 'react';
-import { Grid, Cell } from 'react-mdl';
+import React from 'react';
+import { Grid, GridRow as Row, GridColumn as Column } from 'semantic-ui-react';
 
-class Education extends Component {
-	render() {
-		return(
-			<Grid>
-				<Cell col={4}>
-					<p>{this.props.startYear} - {this.props.endYear}</p>
-				</Cell>
-				<Cell col={8}>
-					<h4 style={{marginTop:'0px'}}>{this.props.schoolName}</h4>
-					<p>{this.props.schoolDescription}</p>
-				</Cell>
-			</Grid>
-		)
-	}
+const Education = ({ startYear, endYear, schoolName, schoolDescription }) => {
+    return(
+        <Grid centered columns={2}>
+            <Row>
+                <Column width={4}>
+                    <p>{ startYear } - { endYear }</p>
+                </Column>
+                <Column width={8}>
+                    <h4 style={{ marginTop:'0px' }}>{ schoolName }</h4>
+                    <p>{ schoolDescription }</p>
+                </Column>
+            </Row>
+        </Grid>
+    )
 }
 
 export default Education;

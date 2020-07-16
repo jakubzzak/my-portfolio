@@ -1,49 +1,78 @@
-import React, { Component } from 'react';
-import { Grid, Cell } from 'react-mdl';
+import React, { useState, useEffect } from 'react';
+import styles from '../../styles/Home.module.css';
+import dummy from '../../styles/Dummy.module.css';
+import { Link } from 'react-router-dom';
+import { Grid, GridColumn as Column, GridRow as Row, Icon, Image, Popup } from 'semantic-ui-react';
+// import banner from '../../assets/scott-graham-unsplash-large.jpg';
+import profilePic from '../../assets/profile.jpeg';
 
 
+// cmd + [ -> navigate back
 const Home = () => {
-    return(
-        <Grid className="landing-grid">
-            <Cell col={12} align={"center"}>
-                <img
-                    src="https://www.shareicon.net/download/2015/09/18/103157_man_512x512.png"
-                    alt="avatar"
-                    className="avatar-img"
-                />
 
-                <div className="banner-text">
-                    <h1>Full Stack Web Developer</h1>
+    const tooltip = {
+        borderRadius: 6,
+        border: 'transparent',
+        backgroundColor: '#888888',
+    }
 
-                    <hr/>
+    const [screenHeight, setScreenHeight] = useState();
 
-                    <p>HTML/CSS | Bootstrap | JavaScript | React | React Native | NodeJS | Express | MongoDB</p>
+    useEffect(() => {
+        setScreenHeight(window.innerHeight);
+    }, [])
 
-                    <div className="social-links">
-
-                        {/* LinkedIn */}
-                        <a href="http://google.com" rel="noopener noreferrer" target="_blank">
-                            <i className="fa fa-linkedin-square" aria-hidden="true" />
-                        </a>
-
-                        {/* Github */}
-                        <a href="http://google.com" rel="noopener noreferrer" target="_blank">
-                            <i className="fa fa-github-square" aria-hidden="true" />
-                        </a>
-
-                        {/* Freecodecamp */}
-                        <a href="http://google.com" rel="noopener noreferrer" target="_blank">
-                            <i className="fa fa-free-code-camp" aria-hidden="true" />
-                        </a>
-
-                        {/* Youtube */}
-                        <a href="http://google.com" rel="noopener noreferrer" target="_blank">
-                            <i className="fa fa-youtube-square" aria-hidden="true" />
-                        </a>
-
-                    </div>
-                </div>
-            </Cell>
+    return (
+        <Grid verticalAlign={"middle"} className={styles.home} style={{ height: screenHeight }} textAlign={"center"} columns={2}>
+            <Row>
+                <Column >
+                    <Image src={profilePic} alt={"banner"} size={"small"} circular centered />
+                    <br/>
+                    <h3>Jakub Žák</h3>
+                    <Popup
+                        trigger={<Icon size={"big"} name={"github square"} />}
+                        size={"mini"}
+                        content='jakubzzak'
+                        style={tooltip}
+                        position='bottom center'
+                    />
+                    <Popup
+                        trigger={<Icon size={"big"} name={"stack overflow"} />}
+                        size={"mini"}
+                        content='user:13845729'
+                        style={tooltip}
+                        position='bottom center'
+                    />
+                    <Popup
+                        trigger={<Icon size={"big"} name={"slack"} />}
+                        size={"mini"}
+                        content='jakubzzak'
+                        style={tooltip}
+                        position='bottom center'
+                    />
+                    <Popup
+                        trigger={<Icon size={"big"} name={"facebook official"} />}
+                        size={"mini"}
+                        content='Jakub Zak'
+                        style={tooltip}
+                        position='bottom center'
+                    />
+                    <Popup
+                        trigger={<Icon size={"big"} name={"telegram"} />}
+                        size={"mini"}
+                        content='jakubzzak'
+                        style={tooltip}
+                        position='bottom center'
+                    />
+                    <Popup
+                        trigger={<Icon size={"big"} name={"mail"} as={Link} to={'google.com'} />}
+                        size={"mini"}
+                        content='zak.jakub67@gmail.com'
+                        style={tooltip}
+                        position='bottom center'
+                    />
+                </Column>
+            </Row>
         </Grid>
     )
 }

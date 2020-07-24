@@ -7,19 +7,20 @@ import dummy from '../../styles/Dummy.module.css'
 
 const Contact = () => {
     return (
-        <Grid centered className={dummy.contact} inverted>
+        <Grid id={'Contact'} centered className={dummy.contact} inverted style={{ padding: '3em' }}>
             <Row centered>
                 <Column textAlign={"center"} style={{ color: "#ffffff" }}>
                     <h3>Contact me</h3>
-                    <Icon size={"big"} inverted name={"facebook official"} />
-                    <Icon size={"big"} inverted name={"mail"} />
-                    <Icon size={"big"} inverted name={"linkedin"} />
+                    <Icon size={"big"} link inverted name={"facebook official"} onClick={ () => window.open('https://www.facebook.com/jakub.zak.75098/')} />
+                    <Icon size={"big"} link inverted name={"mail"} onClick={ () => window.open('mailto:jakubzak@uteg.sk')} />
+                    <Icon size={"big"} link inverted name={"linkedin"} onClick={ () => window.open('https://www.linkedin.com/in/jakub-%C5%BE%C3%A1k-6b02701a0/')} />
                 </Column>
             </Row>
             <Row >
                 <Column textAlign={"center"} style={{ color: "#ffffff" }}>
+                    Jakub Žák
                     <Icon size={"small"} inverted name={"copyright outline"} />
-                    2020 Jakub Zak
+                    2020
                 </Column>
             </Row>
         </Grid>

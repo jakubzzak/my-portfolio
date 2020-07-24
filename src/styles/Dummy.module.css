@@ -7,5 +7,6 @@
 }
 
 .template {
-    min-height: 300px;
+    padding: 10em;
+    /*min-height: 300px;*/
 }

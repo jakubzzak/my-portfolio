@@ -19,53 +19,54 @@ const Home = () => {
     const [screenHeight, setScreenHeight] = useState();
 
     useEffect(() => {
-        setScreenHeight(window.innerHeight);
+        setScreenHeight(window.innerHeight + 30);
     }, [])
 
     return (
-        <Grid verticalAlign={"middle"} className={styles.home} style={{ height: screenHeight }} textAlign={"center"} columns={2}>
+        <Grid id={'Home'} verticalAlign={"middle"} className={styles.home} style={{ height: screenHeight }} textAlign={"center"} columns={2}>
             <Row>
                 <Column >
                     <Image src={profilePic} alt={"banner"} size={"small"} circular centered />
                     <br/>
                     <h3>Jakub Žák</h3>
                     <Popup
-                        trigger={<Icon size={"big"} name={"github square"} />}
+                        trigger={<Icon link size={"big"} name={"github square"} />}
                         size={"mini"}
                         content='jakubzzak'
                         style={tooltip}
                         position='bottom center'
                     />
                     <Popup
-                        trigger={<Icon size={"big"} name={"stack overflow"} />}
+                        trigger={<Icon link size={"big"} name={"stack overflow"} />}
                         size={"mini"}
                         content='user:13845729'
                         style={tooltip}
                         position='bottom center'
                     />
                     <Popup
-                        trigger={<Icon size={"big"} name={"slack"} />}
+                        trigger={<Icon link size={"big"} name={"slack"} />}
                         size={"mini"}
                         content='jakubzzak'
                         style={tooltip}
                         position='bottom center'
                     />
                     <Popup
-                        trigger={<Icon size={"big"} name={"facebook official"} />}
+                        trigger={<Icon link size={"big"} name={"facebook official"} />}
                         size={"mini"}
                         content='Jakub Zak'
                         style={tooltip}
                         position='bottom center'
                     />
                     <Popup
-                        trigger={<Icon size={"big"} name={"telegram"} />}
+                        trigger={<Icon link size={"big"} name={"telegram"} />}
                         size={"mini"}
                         content='jakubzzak'
                         style={tooltip}
                         position='bottom center'
                     />
+                    {/*onClick={event => window.location.href='www.google.com'} ---> push('path')*/}
                     <Popup
-                        trigger={<Icon size={"big"} name={"mail"} as={Link} to={'google.com'} />}
+                        trigger={<Icon link size={"big"} name={"mail"} onClick={ () => window.open('www.google.com', '_blank') } />}
                         size={"mini"}
                         content='zak.jakub67@gmail.com'
                         style={tooltip}

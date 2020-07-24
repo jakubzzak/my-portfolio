@@ -6,14 +6,14 @@ import dummy from "../../styles/Dummy.module.css";
 
 const About = () => {
     return (
-        <Grid className={dummy.template}>
+        <Grid id={'About'} className={dummy.template} textAlign={"center"} verticalAlign={"middle"} style={{ padding: '3em' }}>
             <Row>
-                <Column textAlign={"center"} >
+                <Column >
                     <Row>
                         <h3>Hi, I am</h3>
                     </Row>
                     <Row>
-                        <h4>Jakub Zak</h4>
+                        <h4>Jakub Žák</h4>
                     </Row>
                     <Row>
                         <h5>I am a software enthusiast!</h5>

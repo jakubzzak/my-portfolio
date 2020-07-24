@@ -13,7 +13,7 @@ const Resume = () => {
     const [isTimeline, setIsTimeline] = useState(true);
 
     return (
-        <Grid textAlign={"center"} style={{ backgroundColor: 'black' }}>
+        <Grid id={'Resume'} textAlign={"center"} style={{ backgroundColor: 'black', padding: '3em'}}>
             <Row>
                 <Column>
                     <Button size={"tiny"} content={ isTimeline ? 'Show doc form':'Show timeline'} inverted onClick={() => setIsTimeline(!isTimeline)} />

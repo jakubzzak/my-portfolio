@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React, {useEffect, useState} from 'react';
 import styles from './styles/App.module.css';
 import Main from './components/main';
 import {Menu, Segment, Flag} from "semantic-ui-react";

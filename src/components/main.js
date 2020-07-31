@@ -16,7 +16,7 @@ const Main = () => (
         <About/>
         <Resume/>
         <Projects/>
-        <Blog/>
+        {/*<Blog/>*/}
         <Contact/>
     </div>
 	// <Switch>

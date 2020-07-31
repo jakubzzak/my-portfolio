@@ -3,10 +3,12 @@ import styles from './styles/App.module.css';
 import dummy from './styles/Dummy.module.css'
 import Main from './components/main';
 import {Link} from 'react-router-dom';
-import {Menu, Segment, Sticky} from "semantic-ui-react";
+import {Menu, Segment, Flag, Sticky} from "semantic-ui-react";
 
 
 const Header = () => {
+
+  const [lang, setLang] = useState('us');
 
   // const [poss, setPoss] = useState()
   // const [height, setHeight] = useState()
@@ -37,13 +39,24 @@ const Header = () => {
   };
 
   return (
-    <Segment inverted style={{backgroundColor: '#000000', position: 'fixed', top: 0, width: '100%', zIndex: 999}}>
-      <Menu inverted secondary size={"small"}>
+    <Segment inverted style={{backgroundColor: '#000', position: 'fixed', top: 0, width: '100%', zIndex: 999}}>
+      <Menu inverted secondary size={"small"} style={{  }}>
         <Menu.Item
           icon='id badge'
           name='Jakub Žák'
           onClick={handleItemClick}
+
         />
+        <Menu.Item>
+          {
+            lang === 'sk' &&
+            <Flag name='us' onClick={() => setLang('us')} style={{ cursor: 'pointer' }} />
+          }
+          {
+            lang === 'us' &&
+            <Flag name='sk' onClick={() => setLang('sk')} style={{ cursor: 'pointer' }} />
+          }
+        </Menu.Item>
         <Menu.Menu position='right'>
           <Menu.Item
             name='About'
@@ -74,9 +87,7 @@ const Header = () => {
 const App = () => {
   return (
     <div id={'my_page'}>
-      {/*<Sticky>*/}
-        <Header/>
-      {/*</Sticky>*/}
+      <Header/>
       <div className={styles.body}>
         <Main/>
       </div>

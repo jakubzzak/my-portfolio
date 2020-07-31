@@ -1,109 +1,86 @@
-import React, { Component } from 'react';
-import { Tabs, Tab, Grid, Cell, Card, CardTitle, CardText, CardActions, Button, CardMenu, IconButton } from 'react-mdl';
-import Contact from "./contact";
+import React from 'react';
+import {CardTitle, CardText, CardActions } from 'react-mdl';
+import {Card, Grid, GridRow as Row, GridColumn as Column, Header, Button, Icon } from "semantic-ui-react";
+import dummy from '../../styles/Dummy.module.css'
 
 
-class Projects extends Component {
-	constructor(props) {
-		super(props);
-		this.state = { activeTab: 0 };
-	}
+const Projects = (props) => {
 
-	toggleCategories() {
-
-		if(this.state.activeTab === 0){
-			return(
-				<div className="projects-grid">
-					{/* Project 1 */}
-					<Card shadow={5} style={{minWidth: '450', margin: 'auto'}}>
-						<CardTitle style={{color: '#fff', height: '176px', background: 'url(https://xtnotes-1255646395.coshk.myqcloud.com/images/react-1.svg) center / cover'}} >React Project #1</CardTitle>
-						<CardText>
-							Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's
-						</CardText>
-						<CardActions border>
-							<Button colored>GitHub</Button>
-							<Button colored>CodePen</Button>
-							<Button colored>Live Demo</Button>
-						</CardActions>
-						<CardMenu style={{color: '#fff'}}>
-							<IconButton name="share" />
-						</CardMenu>
-					</Card>
-
-					{/* Project 2 */}
-					<Card shadow={5} style={{minWidth: '450', margin: 'auto'}}>
-						<CardTitle style={{color: '#fff', height: '176px', background: 'url(https://xtnotes-1255646395.coshk.myqcloud.com/images/react-1.svg) center / cover'}} >React Project #2</CardTitle>
-						<CardText>
-							Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's
-						</CardText>
-						<CardActions border>
-							<Button colored>GitHub</Button>
-							<Button colored>CodePen</Button>
-							<Button colored>Live Demo</Button>
-						</CardActions>
-						<CardMenu style={{color: '#fff'}}>
-							<IconButton name="share" />
-						</CardMenu>
-					</Card>
-
-					{/* Project 3 */}
-					<Card shadow={5} style={{minWidth: '450', margin: 'auto'}}>
-						<CardTitle style={{color: '#fff', height: '176px', background: 'url(https://xtnotes-1255646395.coshk.myqcloud.com/images/react-1.svg) center / cover'}} >React Project #3</CardTitle>
-						<CardText>
-							Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's
-						</CardText>
-						<CardActions border>
-							<Button colored>GitHub</Button>
-							<Button colored>CodePen</Button>
-							<Button colored>Live Demo</Button>
-						</CardActions>
-						<CardMenu style={{color: '#fff'}}>
-							<IconButton name="share" />
-						</CardMenu>
-					</Card>
-				</div>
-
-
-			)
-		} else if(this.state.activeTab === 1) {
-			return (
-				<div><h1>This is Angular</h1></div>
-			)
-		} else if(this.state.activeTab === 2) {
-			return (
-				<div><h1>This is VueJS</h1></div>
-			)
-		} else if(this.state.activeTab === 3) {
-			return (
-				<div><h1>This is MongoDB</h1></div>
-			)
-		}
-
-	}
-
-
-
-	render() {
-		return(
-			<div>
-				<Tabs activeTab={this.state.activeTab} onChange={(tabId) => this.setState({ activeTab: tabId })} ripple>
-					<Tab>React</Tab>
-					<Tab>Angular</Tab>
-					<Tab>VueJS</Tab>
-					<Tab>MongoDB</Tab>
-				</Tabs>
-
-
-				<Grid>
-					<Cell col={12}>
-						<div className="content">{this.toggleCategories()}</div>
-					</Cell>
-				</Grid>
-
-
-			</div>
-		)
-	}
+  return (
+    <Grid id={'Projects'} textAlign={"center"} style={{padding: '3em'}} className={dummy.template} >
+      <Row>
+        <Column>
+          <Header style={{ marginBottom: '2em' }}>Projects</Header>
+        </Column>
+      </Row>
+      <Card.Group>
+        <Card style={{border: '2px black solid', borderRadius: '6px'}}>
+          <CardTitle style={{
+            color: '#fff',
+            height: '180px',
+            background: 'url(https://xtnotes-1255646395.coshk.myqcloud.com/images/react-1.svg) center / cover'
+          }}>Acadsys</CardTitle>
+          <CardText>
+            Kratucky popis
+          </CardText>
+          <CardActions>
+            <Button onClick={() => window.open('https://www.acadsys.com/')}>
+              <Button.Content visible>www.acadsys.com</Button.Content>
+              <Button.Content hidden>visit</Button.Content>
+            </Button>
+          </CardActions>
+        </Card>
+        <Card style={{border: '2px black solid', borderRadius: '6px'}}>
+          <CardTitle style={{
+            color: '#fff',
+            height: '180px',
+            background: 'url(https://xtnotes-1255646395.coshk.myqcloud.com/images/react-1.svg) center / cover'
+          }}>Camasys</CardTitle>
+          <CardText>
+            Kratucky popis
+          </CardText>
+          <CardActions>
+            <Button onClick={() => window.open('https://www.camasys.com/')}>
+              <Button.Content visible>www.camasys.com</Button.Content>
+              <Button.Content hidden>visit</Button.Content>
+            </Button>
+          </CardActions>
+        </Card>
+        <Card style={{border: '2px black solid', borderRadius: '6px'}}>
+          <CardTitle style={{
+            color: '#fff',
+            height: '180px',
+            background: 'url(https://xtnotes-1255646395.coshk.myqcloud.com/images/react-1.svg) center / cover'
+          }}>Rentalport</CardTitle>
+          <CardText>
+            Kratucky popis
+          </CardText>
+          <CardActions>
+            <Button onClick={() => window.open('https://rentalport.com/')}>
+              <Button.Content visible>www.rentalport.com</Button.Content>
+              <Button.Content hidden>visit</Button.Content>
+            </Button>
+          </CardActions>
+        </Card>
+        <Card style={{border: '2px black solid', borderRadius: '6px'}}>
+          <CardTitle style={{
+            color: '#fff',
+            height: '180px',
+            background: 'url(https://xtnotes-1255646395.coshk.myqcloud.com/images/react-1.svg) center / cover'
+          }}>Test-eshop</CardTitle>
+          <CardText>
+            Kratucky popis
+          </CardText>
+          <CardActions>
+            <Button onClick={() => window.open('https://test-eshop.netlify.app')}>
+              <Button.Content visible>www.test-eshop.com</Button.Content>
+              <Button.Content hidden>visit</Button.Content>
+            </Button>
+          </CardActions>
+        </Card>
+      </Card.Group>
+    </Grid>
+  )
 }
 
 export default Projects;

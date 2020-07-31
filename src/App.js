@@ -1,9 +1,7 @@
-import React, {useEffect, useState} from 'react';
+import React, {useState} from 'react';
 import styles from './styles/App.module.css';
-import dummy from './styles/Dummy.module.css'
 import Main from './components/main';
-import {Link} from 'react-router-dom';
-import {Menu, Segment, Flag, Sticky} from "semantic-ui-react";
+import {Menu, Segment, Flag} from "semantic-ui-react";
 
 
 const Header = () => {

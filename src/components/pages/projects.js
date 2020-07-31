@@ -1,6 +1,6 @@
 import React from 'react';
 import {CardTitle, CardText, CardActions } from 'react-mdl';
-import {Card, Grid, GridRow as Row, GridColumn as Column, Header, Button, Icon } from "semantic-ui-react";
+import {Card, Grid, GridRow as Row, GridColumn as Column, Header, Button } from "semantic-ui-react";
 import dummy from '../../styles/Dummy.module.css'
 
 

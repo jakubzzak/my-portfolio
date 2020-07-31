@@ -1,7 +1,7 @@
 import React, {useState, useEffect} from 'react';
 import styles from '../../styles/Home.module.css';
-import dummy from '../../styles/Dummy.module.css';
-import {Link} from 'react-router-dom';
+// import dummy from '../../styles/Dummy.module.css';
+// import {Link} from 'react-router-dom';
 import {Grid, GridColumn as Column, GridRow as Row, Icon, Image, Popup} from 'semantic-ui-react';
 // import banner from '../../assets/scott-graham-unsplash-large.jpg';
 import profilePic from '../../assets/profile.jpeg';

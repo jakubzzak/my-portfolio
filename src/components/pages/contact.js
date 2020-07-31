@@ -1,6 +1,6 @@
 import React from 'react';
-import {Grid, GridRow as Row, GridColumn as Column, List, ListItem, Icon, Header} from "semantic-ui-react";
-import Template from "../template";
+import {Grid, GridRow as Row, GridColumn as Column, Icon, Header} from "semantic-ui-react";
+// import Template from "../template";
 import dummy from '../../styles/Dummy.module.css'
 
 

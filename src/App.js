@@ -1,4 +1,4 @@
-import React, {useEffect, useState} from 'react';
+import React, {useState} from 'react';
 import styles from './styles/App.module.css';
 import Main from './components/main';
 import {Menu, Segment, Flag} from "semantic-ui-react";
@@ -8,37 +8,23 @@ const Header = () => {
 
   const [lang, setLang] = useState('us');
 
-  // const [poss, setPoss] = useState()
-  // const [height, setHeight] = useState()
-  //
-  // useEffect(() => {
-  //   setHeight(window.innerHeight)
-  // }, [])
-  //
-  // window.addEventListener('scroll', function (e) {
-  //   setPoss(window.scrollY)
-  // })
-
   const handleItemClick = (e, {name}) => {
     const element = document.getElementById(name)
-    //TODO: scroll not working properly
-    let offsetPos = 0;
+    let offsetPos = name.includes('Jakub') ? 0 : window.pageYOffset;
     if (element !== null) {
       const headerOffset = 30;
       const elementPos = element.getBoundingClientRect().top;
-      // element.scrollIntoView({behavior: "smooth", block: "start", inline: "nearest"});
-      offsetPos = elementPos - headerOffset;
+      offsetPos += elementPos - headerOffset;
     }
-    console.log('el', offsetPos)
     window.scrollTo({
-        top: offsetPos,
-        behavior: 'smooth'
+      top: offsetPos,
+      behavior: 'smooth'
     });
   };
 
   return (
     <Segment inverted style={{backgroundColor: '#000', position: 'fixed', top: 0, width: '100%', zIndex: 999}}>
-      <Menu inverted secondary size={"small"} style={{  }}>
+      <Menu inverted secondary size={"small"} style={{}}>
         <Menu.Item
           icon='id badge'
           name='Jakub Žák'
@@ -46,14 +32,8 @@ const Header = () => {
 
         />
         <Menu.Item>
-          {
-            lang === 'sk' &&
-            <Flag name='us' onClick={() => setLang('us')} style={{ cursor: 'pointer' }} />
-          }
-          {
-            lang === 'us' &&
-            <Flag name='sk' onClick={() => setLang('sk')} style={{ cursor: 'pointer' }} />
-          }
+          <Flag name={lang === 'sk' ? 'us' : 'sk'} onClick={() => setLang(lang === 'sk' ? 'us' : 'sk')}
+                style={{cursor: 'pointer'}}/>
         </Menu.Item>
         <Menu.Menu position='right'>
           <Menu.Item
@@ -68,10 +48,13 @@ const Header = () => {
             name='Projects'
             onClick={handleItemClick}
           />
-          <Menu.Item
-            name='Blog'
-            onClick={handleItemClick}
-          />
+          <del>
+            <Menu.Item
+              name='Blog'
+              disabled
+              onClick={handleItemClick}
+            />
+          </del>
           <Menu.Item
             name='Contact'
             onClick={handleItemClick}

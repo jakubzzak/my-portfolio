@@ -4,7 +4,6 @@ import {Grid, GridRow as Row, GridColumn as Column, Icon, Header} from "semantic
 import dummy from '../../styles/Dummy.module.css'
 
 
-
 const Contact = () => {
     return (
         <Grid id={'Contact'} centered className={dummy.contact} inverted style={{ padding: '3em' }}>
@@ -19,8 +18,7 @@ const Contact = () => {
             <Row centered>
                 <Column textAlign={"center"} style={{ color: "#ffffff" }}>
                     <Icon size={"small"} inverted name={"copyright outline"} />
-                    2019 - 2020
-                    Jakub Žák
+                    2020 Jakub Žák
                 </Column>
             </Row>
         </Grid>

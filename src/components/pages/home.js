@@ -16,7 +16,7 @@ const Home = () => {
     backgroundColor: '#888888',
   }
 
-  const [screenHeight, setScreenHeight] = useState();
+  const [screenHeight, setScreenHeight] = useState(0);
 
   useEffect(() => {
     setScreenHeight(window.innerHeight + 30);

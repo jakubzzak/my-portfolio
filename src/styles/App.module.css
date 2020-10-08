@@ -1,4 +1,17 @@
 .body {
     margin: 0;
     padding: 0;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    overflow-y: hidden;
+    overflow-x: hidden;
+}
+
+.stickyComputerSidebar {
+    z-index: 1000;
+    background: orange;
+    border: solid white 1px;
+    border-radius: 1em;
 }

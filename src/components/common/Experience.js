@@ -1,19 +1,17 @@
 import React from 'react'
-import { Grid } from 'semantic-ui-react'
+import { List } from 'semantic-ui-react'
 
 
-const Experience = ({ startYear, endYear, jobName, jobDescription }) => {
+const Experience = ({ icon, title, description }) => {
 
   return (
-    <Grid>
-      <Grid.Row col={4}>
-        <p>{startYear} - {endYear}</p>
-      </Grid.Row>
-      <Grid.Row col={8}>
-        <h4 style={{ marginTop: '0px' }}>{jobName}</h4>
-        <p>{jobDescription}</p>
-      </Grid.Row>
-    </Grid>
+    <List.Item>
+      <List.Icon name={icon} size={'large'} verticalAlign={'middle'} />
+      <List.Content>
+        <List.Header>{title}</List.Header>
+        <List.Description>{description}</List.Description>
+      </List.Content>
+    </List.Item>
   )
 }
 

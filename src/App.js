@@ -1,7 +1,7 @@
 import React, { useEffect, useState, createRef } from 'react'
 import styles from './styles/App.module.css'
 import Main from './components/Main'
-import { Menu, Segment, Ref, Flag, Rail, Sticky, Card } from 'semantic-ui-react'
+import { Menu, Ref, Flag, Rail, Sticky, Card } from 'semantic-ui-react'
 
 
 const App = () => {
@@ -98,7 +98,7 @@ const App = () => {
             <Main/>
             <Rail position={'right'} size={'mini'}>
               <Sticky context={contextRef}>
-                <Card color={'orange'} textAlign={'left'} className={styles.stickyComputerSidebar}>
+                <Card color={'orange'} className={styles.stickyComputerSidebar}>
                   side bar tu bude behat
                 </Card>
               </Sticky>

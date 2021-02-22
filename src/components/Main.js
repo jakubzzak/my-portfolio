@@ -6,6 +6,7 @@ import Projects from './pages/Projects'
 import Resume from './pages/Resume'
 import SkillsAndExperience from './pages/SkillsAndExperience'
 import Blog from './pages/Blog.js';
+import GetToKnowMe from './pages/GetToKnowMe'
 // import Template from "./template";
 
 
@@ -18,6 +19,7 @@ const Main = () => {
       <Resume/>
       <Projects/>
       <SkillsAndExperience/>
+      <GetToKnowMe/>
       <Blog/>
       <Contact/>
     </div>

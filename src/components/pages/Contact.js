@@ -20,10 +20,15 @@ const Contact = () => {
                 onClick={() => window.open('https://www.linkedin.com/in/jakub-%C5%BE%C3%A1k-6b02701a0/')}/>
         </Grid.Column>
       </Grid.Row>
-      <Grid.Row centered>
-        <Grid.Column textAlign={'center'} style={{ color: '#ffffff' }}>
+      <Grid.Row>
+        <Grid.Column style={{ color: '#ffffff' }}>
+          Photos by Unsplash
+        </Grid.Column>
+      </Grid.Row>
+      <Grid.Row>
+        <Grid.Column style={{ color: '#ffffff' }}>
           <Icon size={'small'} inverted name={'copyright outline'}/>
-          2020 Jakub Žák
+          2021 Jakub Žák
         </Grid.Column>
       </Grid.Row>
     </Grid>

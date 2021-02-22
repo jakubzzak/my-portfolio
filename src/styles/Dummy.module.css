@@ -7,5 +7,63 @@
 }
 
 .template {
-    /*min-height: 300px;*/
+    /*margin: 0 100px;*/
+}
+
+.link {
+    background-color: white;
+    border-radius: 6px;
+    padding: 3px;
+}
+
+.date {
+    background-color: black;
+    color: white;
+    border-radius: 6px;
+    padding: 3px;
+}
+
+
+.paragraph {
+    text-align: justify;
+    text-indent: 45px;
+}
+.section {
+    margin: 0 15em;
+    text-align: justify;
+}
+@media screen and (max-width: 1400px) {
+    .section {
+        margin: 0 12em;
+    }
+}
+@media screen and (max-width: 1200px) {
+    .section {
+        margin: 0 10em;
+    }
+}
+@media screen and (max-width: 1000px) {
+    .section {
+        margin: 0 8em;
+    }
+}
+@media screen and (max-width: 800px) {
+    .section {
+        margin: 0 6em;
+    }
+}
+@media screen and (max-width: 600px) {
+    .section {
+        margin: 0 4em;
+    }
+}
+@media screen and (max-width: 500px) {
+    .section {
+        margin: 0 1em;
+    }
+}
+@media screen and (max-width: 400px) {
+    .section {
+        margin: 0;
+    }
 }

@@ -24,7 +24,7 @@ const Resume = () => {
             <TimelineItem title={'Accepted to collage'}
                           subtitle={'Faculty of mathematics, physics and informatics of Comenius University, Bratislava'}
                           description={'Kicked off a daily study program: Applied informatics'}
-                          date={'September 17th 2018 - present'}
+                          date={'September 17th 2018 - February 15th 2021'}
                           icon={<Icon name={'graduation'} color={'black'} size={'big'} fitted/>}/>
             <TimelineItem title={'Work and travel program'}
                           subtitle={'New Jersey, USA'}
@@ -36,6 +36,11 @@ const Resume = () => {
                           description={'Working on web apps using JS and Java'}
                           date={'October 1st 2019 - present'}
                           icon={<Icon name={'code'} color={'black'} size={'big'} fitted/>}/>
+            <TimelineItem title={'Accepted to collage'}
+                          subtitle={'UCN Aalborg, Denmark'}
+                          description={'Full-time student of Software development top up programme'}
+                          date={'February 2nd 2021 - present'}
+                          icon={<Icon name={'graduation'} color={'black'} size={'big'} fitted/>}/>
           </VerticalTimeline>
         </Grid.Column>
       </Grid.Row>

@@ -75,6 +75,11 @@ const App = () => {
               active={activeMenuitem === 'SkillsAndExperience'}
               onClick={handleItemClick}
             />
+            <Menu.Item
+              name='GetToKnowMe'
+              active={activeMenuitem === 'GetToKnowMe'}
+              onClick={handleItemClick}
+            />
             {/*<del>*/}
               <Menu.Item
                 name='Blog'
@@ -96,13 +101,13 @@ const App = () => {
         <Ref innerRef={contextRef}>
           <div>
             <Main/>
-            <Rail position={'right'} size={'mini'}>
-              <Sticky context={contextRef}>
-                <Card color={'orange'} className={styles.stickyComputerSidebar}>
-                  side bar tu bude behat
-                </Card>
-              </Sticky>
-            </Rail>
+            {/*<Rail position={'right'} size={'mini'}>*/}
+            {/*  <Sticky context={contextRef}>*/}
+            {/*    <Card color={'orange'} className={styles.stickyComputerSidebar}>*/}
+            {/*      side bar tu bude behat*/}
+            {/*    </Card>*/}
+            {/*  </Sticky>*/}
+            {/*</Rail>*/}
           </div>
         </Ref>
       </div>

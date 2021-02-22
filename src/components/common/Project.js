@@ -1,8 +1,8 @@
 import React from 'react'
-import { Button, Card, Image } from 'semantic-ui-react'
+import { Button, Card, Image, Label } from 'semantic-ui-react'
 
 
-const Project = ({ image, title, meta, description, onButtonClick, btnVisibleLabel, btnHiddenLabel }) => {
+const Project = ({ image, title, tags, description, onButtonClick, btnVisibleLabel, btnHiddenLabel }) => {
 
   return (
     <Card style={{
@@ -12,10 +12,12 @@ const Project = ({ image, title, meta, description, onButtonClick, btnVisibleLab
       boxShadow: '0px 0px 15px 15px rgba(0, 0, 0, 0.1), 0px 0px 13px 10px rgba(0, 0, 0, 0.3), 0px 0px 10px 5px rgba(0, 0, 0, 0.5)',
       margin: '2em',
     }}>
-      <Image src={image} wrapped ui={false}/>
+      <Image src={image} ui={false} style={{ height: '150px' }}/>
       <Card.Content>
         <Card.Header>{title}</Card.Header>
-        <Card.Meta>{meta}</Card.Meta>
+        <Card.Meta>{tags.map((tag, index) => {
+          return <Label key={index} color='orange' horizontal>{tag}</Label>
+        })}</Card.Meta>
         <Card.Description>
           {description}
         </Card.Description>

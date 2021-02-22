@@ -17,6 +17,9 @@ const Post = ({ image, title, tags, description, onButtonClick, btnVisibleLabel,
   const onClick = () => {
     dimmerStyle.width = window.innerWidth * .9
     setIsOpened(true)
+    setTimeout(() => {
+      setIsLoading(false)
+    }, 1500)
   }
 
   useEffect(() => {
@@ -32,7 +35,7 @@ const Post = ({ image, title, tags, description, onButtonClick, btnVisibleLabel,
       border: '1.5px black solid',
       borderRadius: '3px',
       width: '350px',
-      boxShadow: '0px 0px 15px 15px rgba(0, 0, 0, 0.1), 0px 0px 13px 10px rgba(0, 0, 0, 0.3), 0px 0px 10px 5px rgba(0, 0, 0, 0.5)',
+      boxShadow: '0px 0px 15px 15px rgba(255, 255, 255, 0.1), 0px 0px 13px 10px rgba(255, 255, 255, 0.3), 0px 0px 10px 5px rgba(255, 255, 255, 0.5)',
       margin: '2em',
     }}>
       <Image src={image} wrapped ui={false}/>
@@ -69,15 +72,18 @@ const Post = ({ image, title, tags, description, onButtonClick, btnVisibleLabel,
         }
         {!isLoading &&
           <Segment style={{ ...dimmerStyle }}>
-            <Icon name={'close'} color={'black'} size={'big'} corner={'top right'} onClick={() => setIsOpened(false)}
-                  onMouseOver={() => setIsCloseIconHover(true)} onMouseLeave={() => setIsCloseIconHover(false)} style={{ position: 'absolute', right: 10, top: 10, cursor: isCloseIconHover ? 'pointer':'default' }}/>
+            <Icon name={'close'} color={'black'} size={'big'} corner={'top right'}
+                  onClick={() => {setIsOpened(false); setIsLoading(true)}}
+                  onMouseOver={() => setIsCloseIconHover(true)}
+                  onMouseLeave={() => setIsCloseIconHover(false)}
+                  style={{ position: 'absolute', right: 10, top: 10, cursor: isCloseIconHover ? 'pointer':'default' }}/>
             <Header>
               {title}
               <Header.Subheader>{detail.date}</Header.Subheader>
             </Header>
             <Grid style={{  color: 'black' }}>
               <Grid.Column>
-                content here
+                Coming in May..
               </Grid.Column>
             </Grid>
           </Segment>

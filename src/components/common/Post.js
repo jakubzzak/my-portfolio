@@ -24,6 +24,7 @@ const Post = ({ image, title, tags, description, onButtonClick, btnVisibleLabel,
 
   useEffect(() => {
     setIsLoading(true)
+    setDetail({})
     // TODO: download the post
     // detail = api.call.data
     // setIsLoading(false)
@@ -94,13 +95,13 @@ const Post = ({ image, title, tags, description, onButtonClick, btnVisibleLabel,
 }
 
 Post.propTypes = {
-  image: PropTypes.object.isRequired,
+  image: PropTypes.string.isRequired,
   title: PropTypes.string.isRequired,
   tags: PropTypes.array.isRequired,
   description: PropTypes.string.isRequired,
   onButtonClick: PropTypes.func,
   btnVisibleLabel: PropTypes.string.isRequired,
-  btnHiddenLabel: PropTypes.string.isRequired,
+  btnHiddenLabel: PropTypes.object.isRequired,
 }
 
 export default Post

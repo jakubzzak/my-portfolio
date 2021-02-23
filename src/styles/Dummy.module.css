@@ -23,6 +23,16 @@
     padding: 3px;
 }
 
+.headerLinks {
+    overflow-x: auto;
+}
+.header {
+    font-size: 13px;
+    display: grid;
+}
+.headerLabel {
+    justify-content: center;
+}
 
 .paragraph {
     text-align: justify;
@@ -47,14 +57,23 @@
         margin: 0 8em;
     }
 }
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 851px) {
     .section {
         margin: 0 6em;
     }
+    .headerLabel {
+        height: 50px;
+    }
+    /*.headerLinks {*/
+    /*    width: 100%;*/
+    /*}*/
 }
 @media screen and (max-width: 600px) {
     .section {
         margin: 0 4em;
+    }
+    .headerLabel {
+        height: 50px;
     }
 }
 @media screen and (max-width: 500px) {

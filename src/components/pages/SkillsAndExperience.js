@@ -21,13 +21,12 @@ const SkillsAndExperience = () => {
             <Segment>
               <List divided relaxed>
                 <Experience icon={'hand point right'} title={'Python, Pygame'} description={'Three semesters'} />
-                <Experience icon={'hand point right'} title={'Php'} description={'One semester'} />
+                <Experience icon={'hand point right'} title={'Html, Css, JS, Php'} description={'One semester'} />
                 <Experience icon={'hand point right'} title={'C++'} description={'One semester'} />
-                <Experience icon={'hand point right'} title={'Java, JavaFX'} description={'Two semester'} />
+                <Experience icon={'hand point right'} title={'Java'} description={'Three semesters'} />
                 <Experience icon={'hand point right'} title={'JavaFX'} description={'Team project based on scrum, one semester'} />
                 <Experience icon={'hand point right'} title={'C#, Windows forms'} description={'One semester'} />
                 <Experience icon={'hand point right'} title={'Postgresql'} description={'Two semesters'} />
-                <Experience icon={'hand point right'} title={'Html, Css, JS'} description={'One semester'} />
                 <Experience icon={'hand point right'} title={'Go, Haskell'} description={'One semester'} />
                 <Experience icon={'hand point right'} title={'Swift'} description={'One semester, bc thesis'} />
               </List>
@@ -54,10 +53,10 @@ const SkillsAndExperience = () => {
                 <Experience icon={'hand point right'} title={'Postgresql'} description={'E-shop, a few months'} />
                 <Experience icon={'hand point right'} title={'React.js, Semantic-UI'} description={'Portfolio, two months'} />
                 <Experience icon={'hand point right'} title={'JavaFX'} description={'Local network chatting app, one month'} />
-                <Experience icon={'hand point right'} title={'Node.js'} description={'Npm package for tracking your working time'} />
-                <Experience icon={'hand point right'} title={'python3'} description={'Discord bot Šaňo, a week'} />
-                <Experience icon={'hand point right'} title={'linux, nginx'} description={'Configuring servers, a few months'} />
-                <Experience icon={'hand point right'} title={'raspberry pi 4'} description={'Home server, a month'} />
+                <Experience icon={'hand point right'} title={'Node.js'} description={'Clockclify, track your working time'} />
+                <Experience icon={'hand point right'} title={'Python3'} description={'Discord bot Šaňo, a week'} />
+                <Experience icon={'hand point right'} title={'Linux, nginx'} description={'Configuring servers, a few months'} />
+                <Experience icon={'hand point right'} title={'Raspberry pi 4'} description={'Home server, a month'} />
               </List>
             </Segment>
           </Grid.Column>

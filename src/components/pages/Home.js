@@ -13,30 +13,28 @@ const Home = () => {
     backgroundColor: '#888888',
   }
 
-  const [screenHeight, setScreenHeight] = useState(0)
+  const [screenHeight, setScreenHeight] = useState(window.innerHeight + 30)
+  const [profileSize, setProfileSize] = useState(window.innerWidth < 600 ? 150:250)
+
 
   useEffect(() => {
-    setScreenHeight(window.innerHeight + 30)
+    window.addEventListener('resize', () => {
+      setProfileSize(window.innerWidth < 600 ? 150:250)
+      // setScreenHeight(window.innerWidth + 30)
+    })
   }, [])
 
   return (
     <Grid id={'Home'} verticalAlign={'middle'} className={styles.home} style={{ height: screenHeight }}
           textAlign={'center'} columns={2}>
-      <Row style={{}}>
+      <Row>
         <Column>
-          <Avatar size={200} round={'20px'} src={profilePic} name="Jakub Zak" />
+          <Avatar size={profileSize} round={'20px'} src={profilePic} name="Jakub Zak" />
           <br/>
           <h3>Jakub Žák</h3>
           <Popup
             trigger={<Icon link size={'big'} name={'github square'} style={{ margin: '2px' }}
                            onClick={() => window.open('https://github.com/jakubzzak')}/>}
-            size={'mini'}
-            content='jakubzzak'
-            style={tooltip}
-            position='bottom center'
-          />
-          <Popup
-            trigger={<Icon link size={'big'} name={'slack'} style={{ margin: '2px' }}/>}
             size={'mini'}
             content='jakubzzak'
             style={tooltip}

@@ -7,6 +7,9 @@ const Contact = () => {
   return (
     <Grid id={'Contact'} textAlign={'center'} className={dummy.contact} inverted style={{ padding: '3em' }}>
       <Grid.Row>
+        <Grid.Column width={10} style={{ border:'solid red 1px' }} />
+      </Grid.Row>
+      <Grid.Row>
         <Grid.Column width={16}>
           <Header inverted style={{ marginBottom: '2em' }}>Contact me</Header>
         </Grid.Column>

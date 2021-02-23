@@ -9,7 +9,7 @@ const About = () => {
           style={{ padding: '3em' }}>
       <Grid.Row>
         <Grid.Column width={16}>
-          <Header style={{ marginBottom: '2em' }}>Get to know me..</Header>
+          <Header style={{ marginBottom: '2em' }}>Get to know me</Header>
         </Grid.Column>
       </Grid.Row>
       <Grid.Row>
@@ -26,16 +26,16 @@ const About = () => {
             will more than likely reach for a book. My literary collection includes works such as:&nbsp;
             <a className="ref"
                href="https://www.goodreads.com/book/show/4865.How_to_Win_Friends_and_Influence_People?ac=1&from_search=true&qid=ZOxzEBKoo4&rank=1"
-               target="_blank"><span className={dummy.link}>How to win friends and influence people</span>
+               target="_blank" rel="noopener noreferrer"><span className={dummy.link}>How to win friends and influence people</span>
             </a> by Dale Carnegie,&nbsp;
             <a className="ref"
                href="https://www.goodreads.com/book/show/26156469-never-split-the-difference?ac=1&from_search=true&qid=5EXdraZgQu&rank=1"
-               target="_blank"><span className={dummy.link}>Never split the difference</span></a> by Chris Voss,&nbsp;
+               target="_blank" rel="noopener noreferrer"><span className={dummy.link}>Never split the difference</span></a> by Chris Voss,&nbsp;
             <a className="ref"
                href="https://www.goodreads.com/book/show/3735293-clean-code?from_search=true&from_srp=true&qid=OmOUbnHiOY&rank=1"
-               target="_blank"><span className={dummy.link}>Clean code</span>
+               target="_blank" rel="noopener noreferrer"><span className={dummy.link}>Clean code</span>
             </a> by Robert C. Martin. You can check out my whole library on&nbsp;
-            <a className="ref" href="https://www.goodreads.com/user/show/41121845-jakub-k" target="_blank"><span
+            <a className="ref" href="https://www.goodreads.com/user/show/41121845-jakub-k" target="_blank" rel="noopener noreferrer"><span
               className={dummy.link}>goodreads.com</span>
             </a>.
           </p>

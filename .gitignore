@@ -1,7 +1,10 @@
 # See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
+.idea
+.editorconfig
 
 # dependencies
-/node_modules
+/node_modules/
+/personal/
 /.pnp
 .pnp.js
 

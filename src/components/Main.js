@@ -20,7 +20,7 @@ const Main = () => {
       <Projects/>
       <SkillsAndExperience/>
       <GetToKnowMe/>
-      <Blog/>
+      {/*<Blog/>*/}
       <Contact/>
     </div>
   )

@@ -108,12 +108,12 @@ const App = () => {
               active={activeMenuitem === 'GetToKnowMe'}
               onClick={handleItemClick}
             />
-            <Menu.Item
-              name='Blog'
-              // disabled
-              active={activeMenuitem === 'Blog'}
-              onClick={handleItemClick}
-            />
+            {/*<Menu.Item*/}
+            {/*  name='Blog'*/}
+            {/*  // disabled*/}
+            {/*  active={activeMenuitem === 'Blog'}*/}
+            {/*  onClick={handleItemClick}*/}
+            {/*/>*/}
             <Menu.Item
               name='Contact'
               active={activeMenuitem === 'Contact'}

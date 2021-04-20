@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react'
 import styles from '../../styles/Home.module.css'
 import { Grid, GridColumn as Column, GridRow as Row, Icon, Popup } from 'semantic-ui-react'
-import profilePic from '../../assets/portrait.jpeg'
+import profilePic from '../../assets/portrait.png'
 import Avatar from 'react-avatar'
 
 

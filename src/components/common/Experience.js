@@ -9,7 +9,7 @@ const Experience = ({ icon, title, description }) => {
       <List.Icon name={icon} size={'large'} verticalAlign={'middle'} />
       <List.Content>
         <List.Header>{title}</List.Header>
-        <List.Description>{description}</List.Description>
+        <List.Description><div dangerouslySetInnerHTML={{ __html: description}} /></List.Description>
       </List.Content>
     </List.Item>
   )

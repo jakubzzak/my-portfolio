@@ -26,15 +26,24 @@ const About = () => {
             will more than likely reach for a book. My literary collection includes works such as:&nbsp;
             <a className="ref"
                href="https://www.goodreads.com/book/show/4865.How_to_Win_Friends_and_Influence_People?ac=1&from_search=true&qid=ZOxzEBKoo4&rank=1"
-               target="_blank" rel="noopener noreferrer"><span className={dummy.link}>How to win friends and influence people</span>
+               target="_blank" rel="noopener noreferrer"><span className={dummy.link}>How to Win Friends and Influence People</span>
             </a> by Dale Carnegie,&nbsp;
             <a className="ref"
                href="https://www.goodreads.com/book/show/26156469-never-split-the-difference?ac=1&from_search=true&qid=5EXdraZgQu&rank=1"
-               target="_blank" rel="noopener noreferrer"><span className={dummy.link}>Never split the difference</span></a> by Chris Voss,&nbsp;
+               target="_blank" rel="noopener noreferrer"><span className={dummy.link}>Never Split the Difference</span></a> by Chris Voss,&nbsp;
             <a className="ref"
                href="https://www.goodreads.com/book/show/3735293-clean-code?from_search=true&from_srp=true&qid=OmOUbnHiOY&rank=1"
-               target="_blank" rel="noopener noreferrer"><span className={dummy.link}>Clean code</span>
-            </a> by Robert C. Martin. You can check out my whole library on&nbsp;
+               target="_blank" rel="noopener noreferrer"><span className={dummy.link}>Clean Code</span>
+            </a> by Robert C. Martin,&nbsp;
+            <a className="ref"
+               href="https://www.goodreads.com/book/show/76865.Good_to_Great?ac=1&from_search=true&qid=h043yQ6So6&rank=1"
+               target="_blank" rel="noopener noreferrer"><span className={dummy.link}>Good to Great</span>
+            </a> by James C. Collins or&nbsp;
+            <a className="ref"
+               href="https://www.goodreads.com/book/show/12609433-the-power-of-habit?ac=1&from_search=true&qid=BIGKyJUktD&rank=1"
+               target="_blank" rel="noopener noreferrer"><span className={dummy.link}>The Power of Habit</span>
+            </a> by Charles Duhigg.
+            You can check out my whole library on&nbsp;
             <a className="ref" href="https://www.goodreads.com/user/show/41121845-jakub-k" target="_blank" rel="noopener noreferrer"><span
               className={dummy.link}>goodreads.com</span>
             </a>.

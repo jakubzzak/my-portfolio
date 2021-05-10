@@ -30,6 +30,7 @@ const SkillsAndExperience = () => {
                 <Experience icon={'hand point right'} title={'Go, Haskell'} description={'One semester'} />
                 <Experience icon={'hand point right'} title={'Swift'} description={'One semester, bc thesis'} />
                 <Experience icon={'hand point right'} title={'Mssql'} description={'One semester'} />
+                <Experience icon={'hand point right'} title={'Python, Flask'} description={'One semester'} />
               </List>
             </Segment>
           </Grid.Column>
@@ -37,9 +38,9 @@ const SkillsAndExperience = () => {
             <Segment>
               <Header textAlign={"center"}>Work</Header>
               <List divided relaxed>
-                <Experience icon={'hand point right'} title={'Java, Spring'} description={'Over a year'} />
-                <Experience icon={'hand point right'} title={'React.js, Semantic-UI'} description={'Over a year'} />
-                <Experience icon={'hand point right'} title={'Postgresql'} description={'Over a year'} />
+                <Experience icon={'hand point right'} title={'Java, Spring'} description={'Almost two years'} />
+                <Experience icon={'hand point right'} title={'React.js, Semantic-UI'} description={'Almost two years'} />
+                <Experience icon={'hand point right'} title={'Postgresql'} description={'Almost two years'} />
                 <Experience icon={'hand point right'} title={'Vue.js'} description={'A few months'} />
                 <Experience icon={'hand point right'} title={'Firebase'} description={'A few months'} />
               </List>
@@ -49,7 +50,6 @@ const SkillsAndExperience = () => {
             <Segment>
             <Header textAlign={"center"}>Other</Header>
               <List divided relaxed>
-                <Experience icon={'hand point right'} title={'Vue.js, Vuetify/Buetify'} description={'E-shop, a few months'} />
                 <Experience icon={'hand point right'} title={'Express.js'} description={'E-shop, a few months'} />
                 <Experience icon={'hand point right'} title={'Postgresql'} description={'E-shop, a few months'} />
                 <Experience icon={'hand point right'} title={'React.js, Semantic-UI'} description={'Portfolio, two months'} />
@@ -58,6 +58,7 @@ const SkillsAndExperience = () => {
                 <Experience icon={'hand point right'} title={'Python3'} description={'Discord bot Šaňo, a week'} />
                 <Experience icon={'hand point right'} title={'Linux, nginx'} description={'Configuring servers, a few months'} />
                 <Experience icon={'hand point right'} title={'Raspberry pi 4'} description={'Home server, a month'} />
+                <Experience icon={'hand point right'} title={'Next.js'} description={'Custom eshop, a few months'} />
               </List>
             </Segment>
           </Grid.Column>

@@ -28,9 +28,10 @@ const SkillsAndExperience = () => {
                 <Experience icon={'hand point right'} title={'C#, Windows forms'} description={'One semester'} />
                 <Experience icon={'hand point right'} title={'Postgresql'} description={'Two semesters'} />
                 <Experience icon={'hand point right'} title={'Go, Haskell'} description={'One semester'} />
-                <Experience icon={'hand point right'} title={'Swift'} description={'One semester, bc thesis'} />
-                <Experience icon={'hand point right'} title={'Mssql'} description={'One semester'} />
-                <Experience icon={'hand point right'} title={'Python, Flask'} description={'One semester'} />
+                <Experience icon={'hand point right'} title={'Swift'} description={'One semester'} />
+                <Experience icon={'hand point right'} title={'Mssql'} description={'<a href="https://github.com/jakubzzak/gtl-db" target="_blank" style="color: red;">GTL database</a>, one semester'} />
+                <Experience icon={'hand point right'} title={'Python, Flask'} description={'<a href="https://github.com/jakubzzak/gtl-backend" target="_blank" style="color: red;">GTL backend</a>, one semester'} />
+                <Experience icon={'hand point right'} title={'React'} description={'<a href="https://github.com/jakubzzak/georgia-tech-library" target="_blank" style="color: red;">GTL frontend</a>, one semester'} />
               </List>
             </Segment>
           </Grid.Column>
@@ -53,10 +54,10 @@ const SkillsAndExperience = () => {
                 <Experience icon={'hand point right'} title={'Express.js'} description={'E-shop, a few months'} />
                 <Experience icon={'hand point right'} title={'Postgresql'} description={'E-shop, a few months'} />
                 <Experience icon={'hand point right'} title={'React.js, Semantic-UI'} description={'Portfolio, two months'} />
-                <Experience icon={'hand point right'} title={'JavaFX'} description={'Local network chatting app, one month'} />
+                <Experience icon={'hand point right'} title={'JavaFX'} description={'<a href="https://github.com/jakubzzak/socketChattingApp" target="_blank" style="color: red;">Local network chatting app</a>, a week'} />
                 <Experience icon={'hand point right'} title={'Node.js'} description={'<a href="https://www.npmjs.com/package/clocklify" target="_blank" style="color: red;">Clocklify</a>, track your working time'} />
-                <Experience icon={'hand point right'} title={'Python3'} description={'Discord bot Šaňo, a week'} />
-                <Experience icon={'hand point right'} title={'Linux, nginx'} description={'Configuring servers, a few months'} />
+                <Experience icon={'hand point right'} title={'Python'} description={'<a href="https://github.com/jakubzzak/discordBot" target="_blank" style="color: red;">Discord bot Šaňo</a>, a week'} />
+                <Experience icon={'hand point right'} title={'Linux, nginx'} description={'Deploying projects, a few months'} />
                 <Experience icon={'hand point right'} title={'Raspberry pi 4'} description={'Home server, a month'} />
                 <Experience icon={'hand point right'} title={'Next.js'} description={'Custom eshop, a few months'} />
               </List>

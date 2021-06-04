@@ -34,7 +34,7 @@ const Resume = () => {
             <TimelineItem title={'Junior fullstack developer'}
                           subtitle={'At United Technologies'}
                           description={'Working on web apps using JS and Java'}
-                          date={'October 1st 2019 - May 1st 2021'}
+                          date={'October 1st 2019 - June 1st 2021'}
                           icon={<Icon name={'code'} color={'black'} size={'big'} fitted/>}/>
             <TimelineItem title={'Accepted to collage'}
                           subtitle={'UCN Aalborg, Denmark'}

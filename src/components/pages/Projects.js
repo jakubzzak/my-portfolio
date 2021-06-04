@@ -6,6 +6,7 @@ import acadsysImage from '../../assets/acadsys.png'
 import camasysImage from '../../assets/camasys.png'
 import rentalportImage from '../../assets/rentalport.png'
 import hpImage from '../../assets/hp_controller.png'
+import clockclifyImage from '../../assets/clocklify.png'
 
 
 const Projects = () => {
@@ -18,7 +19,7 @@ const Projects = () => {
           <Header style={{ marginBottom: '2em' }}>Projects</Header>
         </Grid.Column>
       </Grid.Row>
-      <Card.Group centered>
+      <Card.Group stackable centered>
         <Project title={'Acadsys'} tags={['web app', 'invoice', 'accounting']} image={acadsysImage} description={'Document management system'}
                  onButtonClick={() => window.open('https://www.acadsys.com/')} btnVisibleLabel={'www.acadsys.com'}
                  btnHiddenLabel={'visit'}/>
@@ -31,6 +32,9 @@ const Projects = () => {
                  btnHiddenLabel={'visit'}/>
         <Project title={'Hp controller'} tags={['physics', 'desktop', 'school']} image={hpImage} description={'Gui for manipulation of a physics\'s machine'}
                  onButtonClick={() => window.open('https://github.com/TIS2020-FMFI/hp')} btnVisibleLabel={'www.github.com'}
+                 btnHiddenLabel={'visit'}/>
+        <Project title={'Clocklify'} tags={['developer', 'terminal', 'Clockify']} image={clockclifyImage} description={'Track your working hours with a simple tool'}
+                 onButtonClick={() => window.open('https://www.npmjs.com/package/clocklify')} btnVisibleLabel={'www.npmjs.com'}
                  btnHiddenLabel={'visit'}/>
       </Card.Group>
     </Grid>

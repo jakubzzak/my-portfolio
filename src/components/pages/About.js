@@ -18,10 +18,7 @@ const About = () => {
             My name is Jakub Žák and I am a technology enthusiast specializing in software development based in Aalborg,
             Denmark.
             <br/>
-            Currently, I am actively applying for a job as a <span className={dummy.link}>fullstack developer</span>.
-            {/*Currently, I am working as a junior software developer for*/}
-            {/*<a href='https://www.uteg.sk/' target="_blank" style={{ textDecoration: 'none' }} rel="noopener noreferrer"><span*/}
-            {/*className={dummy.link}>UnitedTechnologies</span></a>.*/}
+            Currently, I am actively applying for a position of <span className={dummy.link}>Software developer</span> of any kind.
             <br/>
             Please feel free to check out my work below and reach out to me with any questions or comments you may have.
           </p>

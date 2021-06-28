@@ -31,16 +31,21 @@ const Resume = () => {
                           description={'Two and a half months of daily interaction with people, two weeks of traveling on the east coast'}
                           date={'June 16th - September 16th 2019'}
                           icon={<Icon name={'compass'} color={'black'} size={'big'} fitted/>}/>
-            <TimelineItem title={'Junior fullstack developer'}
+            <TimelineItem title={'Fullstack developer'}
                           subtitle={'At United Technologies'}
-                          description={'Working on web apps using JS and Java'}
-                          date={'October 1st 2019 - June 1st 2021'}
+                          description={'Working on web apps using React, Spring and Postgres'}
+                          date={'September 1st 2019 - July 1st 2021'}
                           icon={<Icon name={'code'} color={'black'} size={'big'} fitted/>}/>
             <TimelineItem title={'Accepted to collage'}
                           subtitle={'UCN Aalborg, Denmark'}
                           description={'Full-time student of Software development top up programme'}
                           date={'February 2nd 2021 - present'}
                           icon={<Icon name={'graduation'} color={'black'} size={'big'} fitted/>}/>
+            <TimelineItem title={'Personal project'}
+                          subtitle={'Cybik'}
+                          description={'Working on custom eshop using Next, Spring and Postgres'}
+                          date={'September 1st 2019 - July 1st 2021'}
+                          icon={<Icon name={'code'} color={'black'} size={'big'} fitted/>}/>
           </VerticalTimeline>
         </Grid.Column>
       </Grid.Row>

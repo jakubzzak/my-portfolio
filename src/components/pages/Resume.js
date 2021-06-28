@@ -43,7 +43,7 @@ const Resume = () => {
                           icon={<Icon name={'graduation'} color={'black'} size={'big'} fitted/>}/>
             <TimelineItem title={'Personal project'}
                           subtitle={'Cybik'}
-                          description={'Working on custom eshop using Next, Spring and Postgres'}
+                          description={'Working on a custom eshop using Next, Spring and Postgres'}
                           date={'April 1st 2021 - present'}
                           icon={<Icon name={'code'} color={'black'} size={'big'} fitted/>}/>
           </VerticalTimeline>

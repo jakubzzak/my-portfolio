@@ -36,6 +36,11 @@ const Projects = () => {
         <Project title={'Clocklify'} tags={['developer', 'terminal', 'Clockify']} image={clockclifyImage} description={'Track your working hours with a simple tool'}
                  onButtonClick={() => window.open('https://www.npmjs.com/package/clocklify')} btnVisibleLabel={'www.npmjs.com'}
                  btnHiddenLabel={'visit'}/>
+        <Project title={'Cybik'} tags={['ecommerce', 'clothes']} image={null} description={'Ecommerce app for a clothing company'}
+                 onButtonClick={() => window.open('https://www.cybik.sk')} btnVisibleLabel={'www.cybik.sk'}
+                 btnHiddenLabel={'visit'}
+                 disabled
+        />
       </Card.Group>
     </Grid>
   )

@@ -44,7 +44,7 @@ const Resume = () => {
             <TimelineItem title={'Personal project'}
                           subtitle={'Cybik'}
                           description={'Working on custom eshop using Next, Spring and Postgres'}
-                          date={'September 1st 2019 - July 1st 2021'}
+                          date={'April 1st 2021 - present'}
                           icon={<Icon name={'code'} color={'black'} size={'big'} fitted/>}/>
           </VerticalTimeline>
         </Grid.Column>

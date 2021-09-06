@@ -4,7 +4,7 @@ import dummy from '../../styles/Dummy.module.css'
 import Project from '../common/Project'
 import acadsysImage from '../../assets/acadsys.png'
 import camasysImage from '../../assets/camasys.png'
-import rentalportImage from '../../assets/rentalport.png'
+import graitorImage from '../../assets/graitor.png'
 import hpImage from '../../assets/hp_controller.png'
 import clockclifyImage from '../../assets/clocklify.png'
 
@@ -26,10 +26,6 @@ const Projects = () => {
         <Project title={'Camasys'} tags={['car', 'web app']} image={camasysImage} description={'Everything your car rental company needs'}
                  onButtonClick={() => window.open('https://www.camasys.com/')} btnVisibleLabel={'www.camasys.com'}
                  btnHiddenLabel={'visit'}/>
-        <Project title={'Rentalport'} tags={['web', 'car', 'broker']} image={rentalportImage} description={'Online car rental broker'}
-                 onButtonClick={() => window.open('https://www.rentalport.com/')}
-                 btnVisibleLabel={'www.rentalport.com'}
-                 btnHiddenLabel={'visit'}/>
         <Project title={'Hp controller'} tags={['physics', 'desktop', 'school']} image={hpImage} description={'Gui for manipulation of a physics\'s machine'}
                  onButtonClick={() => window.open('https://github.com/TIS2020-FMFI/hp')} btnVisibleLabel={'www.github.com'}
                  btnHiddenLabel={'visit'}/>
@@ -39,8 +35,11 @@ const Projects = () => {
         <Project title={'Cybik'} tags={['ecommerce', 'clothes']} image={null} description={'Ecommerce app for a clothing company'}
                  onButtonClick={() => window.open('https://www.cybik.sk')} btnVisibleLabel={'www.cybik.sk'}
                  btnHiddenLabel={'visit'}
-                 disabled
-        />
+                 disabled/>
+        <Project title={'Graitor'} tags={['recycle', 'treats', 'mobile app', 'web app']} image={graitorImage} description={'Recycle more and get extra reward, "treats"'}
+                 onButtonClick={() => window.open('https://www.graitor.dk/')}
+                 btnVisibleLabel={'www.graitor.dk'}
+                 btnHiddenLabel={'visit'}/>
       </Card.Group>
     </Grid>
   )

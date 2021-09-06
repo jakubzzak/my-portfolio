@@ -18,7 +18,11 @@ const About = () => {
             My name is Jakub Žák and I am a technology enthusiast specializing in software development based in Aalborg,
             Denmark.
             <br/>
-            Currently, I am actively applying for a position of <span className={dummy.link}>Software developer</span> of any kind.
+            Currently, I am attending a full time top up program in Software development at UCN,
+            as well as working as a Fullstack app developer at&nbsp;
+            <a className="ref" href="https://www.graitor.dk/" target="_blank" rel="noopener noreferrer">
+              <span className={dummy.link}>Graitor</span>
+            </a>.
             <br/>
             Please feel free to check out my work below and reach out to me with any questions or comments you may have.
           </p>

@@ -46,9 +46,9 @@ const App = () => {
     const element = document.getElementById(name)
     let offsetPos = name.includes('Jakub') ? 0 : window.pageYOffset
     if (element !== null) {
-      const headerOffset = isThin ? 108:58
+      const headerOffset = isThin ? 108:48
       const elementPos = element.getBoundingClientRect().top
-      offsetPos += elementPos - headerOffset
+      offsetPos += elementPos - headerOffset - (isThin ? 70:250) // minus svg curves height
     }
     window.scrollTo({
       top: offsetPos,

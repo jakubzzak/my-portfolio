@@ -42,7 +42,7 @@ const About = () => {
             <a className="ref"
                href="https://www.goodreads.com/book/show/12609433-the-power-of-habit?ac=1&from_search=true&qid=BIGKyJUktD&rank=1"
                target="_blank" rel="noopener noreferrer"><span className={dummy.link}>The Power of Habit</span>
-            </a> by Charles Duhigg.
+            </a> by Charles Duhigg and many more.
             You can check out my whole library on&nbsp;
             <a className="ref" href="https://www.goodreads.com/user/show/41121845-jakub-k" target="_blank" rel="noopener noreferrer"><span
               className={dummy.link}>goodreads.com</span>

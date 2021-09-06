@@ -17,7 +17,7 @@ const About = () => {
           <p className={dummy.paragraph}>
             I do not like to get bored so I try to fill my free time with learning new things like languages. These
             days I am mostly focusing on improving my English, however, I also enjoy exploring other languages like
-            German, Russian, and soon Danish. Languages is just one of my curiosities. I would like to a learn a little
+            German, Russian, and currently Danish. Languages is just one of my curiosities. I would like to a learn a little
             about everything.
           </p>
           <p className={dummy.paragraph}>

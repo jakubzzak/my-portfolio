@@ -1,28 +1,68 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta name="theme-color" content="#000000">
-  <link rel="manifest" href="%PUBLIC_URL%/manifest.json">
-  <link rel="shortcut icon" href="%PUBLIC_URL%/favicon.ico">
-  <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.css"/>
-  <title>jakubzzak</title>
-  <!-- Global site tag (gtag.js) - Google Analytics -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-902SJLY5KM"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <meta name="theme-color" content="#000000" />
+    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+    <link rel="shortcut icon" href="%PUBLIC_URL%/favicon.ico" />
+    <link
+      rel="stylesheet"
+      href="//cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.css"
+    />
+    <title>jakubzzak</title>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-902SJLY5KM"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
 
-    gtag('config', 'G-902SJLY5KM');
-  </script>
-  <!--  <script src="https://cdn.polyfill.io/v2/polyfill.min.js"></script>-->
-</head>
-<body>
-<noscript>
-  You need to enable JavaScript to run this app.
-</noscript>
-<div id="root"></div>
-</body>
+      gtag("config", "G-902SJLY5KM");
+    </script>
+    <!-- goodreads widget iframe styles -->
+    <style>
+      #gr_updates_widget {
+        border-radius: 5px;
+        background-color: #fff;
+        border: solid #683205 10px;
+        -webkit-box-shadow: 0px 0px 4px 1px #595959,
+          inset 0px 0px 0px 1px #7d730b;
+        -moz-box-shadow: 0px 0px 4px 1px #595959, inset 0px 0px 0px 1px #7d730b;
+        box-shadow: 0px 0px 4px 1px #595959, inset 0px 0px 0px 1px #7d730b;
+        padding: 15px 0 35px -30px;
+        width: 350px;
+        height: 400px;
+        overflow: scroll;
+      }
+      #gr_footer {
+        margin-bottom: 10px;
+      }
+      #gr_updates_widget p {
+        padding: 0px;
+        margin: 0;
+        font-size: 14px;
+      }
+      #gr_footer img {
+        /* width: 100px; */
+        float: right;
+      }
+      #gr_updates_widget img {
+        border-style: none;
+      }
+    </style>
+    <!--  <script src="https://cdn.polyfill.io/v2/polyfill.min.js"></script>-->
+  </head>
+  <body>
+    <noscript> You need to enable JavaScript to run this app. </noscript>
+    <div id="root"></div>
+  </body>
 </html>

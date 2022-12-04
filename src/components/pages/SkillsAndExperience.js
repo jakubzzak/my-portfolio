@@ -38,12 +38,12 @@ const SkillsAndExperience = () => {
                   />
                   <Experience
                     icon={"hand point right"}
-                    title={"Html, Css, JS, React"}
-                    description={"One semester"}
+                    title={"Html, Css, JS, PHP, React"}
+                    description={"Two semesters"}
                   />
                   <Experience
                     icon={"hand point right"}
-                    title={"C++"}
+                    title={"C++, C#"}
                     description={"One semester"}
                   />
                   <Experience
@@ -52,11 +52,6 @@ const SkillsAndExperience = () => {
                     description={
                       'Three semesters, <a href="https://github.com/TIS2020-FMFI/hp" target="_blank" style="color: red;">Hp controller</a>'
                     }
-                  />
-                  <Experience
-                    icon={"hand point right"}
-                    title={"C#, Windows forms"}
-                    description={"One semester"}
                   />
                   <Experience
                     icon={"hand point right"}
@@ -102,18 +97,18 @@ const SkillsAndExperience = () => {
                   />
                   <Experience
                     icon={"hand point right"}
-                    title={"Software testing"}
+                    title={"Software testing, TDD"}
                     description={"A year"}
                   />
                   <Experience
                     icon={"hand point right"}
-                    title={"Typescript, Node.js"}
-                    description={"Half a year"}
+                    title={"Typescript, Node.js, Python"}
+                    description={"A year"}
                   />
                   <Experience
                     icon={"hand point right"}
-                    title={"Python"}
-                    description={"Half a year"}
+                    title={"AWS, Serverless"}
+                    description={"A year"}
                   />
                   <Experience
                     icon={"hand point right"}
@@ -122,22 +117,12 @@ const SkillsAndExperience = () => {
                   />
                   <Experience
                     icon={"hand point right"}
-                    title={"Mysql"}
+                    title={"Mysql, Firebase"}
                     description={"Half a year"}
                   />
                   <Experience
                     icon={"hand point right"}
-                    title={"Firebase"}
-                    description={"Half a year"}
-                  />
-                  <Experience
-                    icon={"hand point right"}
-                    title={"Vue.js"}
-                    description={"Half a year"}
-                  />
-                  <Experience
-                    icon={"hand point right"}
-                    title={"Flutter"}
+                    title={"Vue.js, Flutter"}
                     description={"Half a year"}
                   />
                 </List>
@@ -197,11 +182,6 @@ const SkillsAndExperience = () => {
                     icon={"hand point right"}
                     title={"Raspberry pi 4"}
                     description={"Home server, a month"}
-                  />
-                  <Experience
-                    icon={"hand point right"}
-                    title={"Flutter"}
-                    description={"A side project, a few months"}
                   />
                 </List>
               </Segment>

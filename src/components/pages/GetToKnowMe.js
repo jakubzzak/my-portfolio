@@ -30,10 +30,10 @@ const About = () => {
           <p className={dummy.paragraph}>
             <Grid stackable>
               <Grid.Column width={8}>
-                As a computer science student, there are times when I really
-                have to look away from a screen. In these cases, I will more
-                than likely reach for a book. My literary collection includes
-                works such as:&nbsp;
+                As a software engineer, there are times when I really have to
+                look away from a screen. In these cases, I will more than likely
+                reach for a book. My literary collection includes works such
+                as:&nbsp;
                 <a
                   className="ref"
                   href="https://www.goodreads.com/book/show/4865.How_to_Win_Friends_and_Influence_People?ac=1&from_search=true&qid=ZOxzEBKoo4&rank=1"
@@ -71,7 +71,7 @@ const About = () => {
                 >
                   <span className={dummy.link}>Good to Great</span>
                 </a>{" "}
-                by James C. Collins or&nbsp;
+                by James C. Collins,&nbsp;
                 <a
                   className="ref"
                   href="https://www.goodreads.com/book/show/11468377-thinking-fast-and-slow?ac=1&from_search=true&qid=b5tlFFti6s&rank=1"
@@ -93,7 +93,7 @@ const About = () => {
                 library on&nbsp;
                 <a
                   className="ref"
-                  href="https://www.goodreads.com/user/show/41121845-jakub-k"
+                  href="https://www.goodreads.com/user/show/41121845-jakub-zak"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
@@ -116,9 +116,9 @@ const About = () => {
           </p>
           <p className={dummy.paragraph}>
             And last but not least, I spend a lot of time hanging out with
-            friends and doing sports like running, working out, swimming,
-            snowboarding, cross-country skiing, beach volleyball, tennis ..
-            pretty much anything :).
+            friends and doing all kinds of sports like running, biking,
+            swimming, working out, snowboarding, cross-country skiing, beach
+            volleyball, tennis .. pretty much anything :).
           </p>
         </Grid.Column>
       </Grid.Row>

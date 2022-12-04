@@ -75,7 +75,7 @@ const Resume = () => {
                 }
               />
               <TimelineItem
-                title={"Fullstack Developer"}
+                title={"Full Stack Developer"}
                 subtitle={"At United Technologies, Bratislava"}
                 description={
                   "Working on web apps using React, Spring Boot and PostgreSQL"
@@ -113,7 +113,7 @@ const Resume = () => {
                 }
               /> */}
               <TimelineItem
-                title={"Fullstack App Developer"}
+                title={"Full Stack App Developer"}
                 subtitle={"At Graitor, Aalborg"}
                 description={
                   "Working on internal web apps and a mobile app using Vue, Laravel, Mysql and Flutter"
@@ -127,7 +127,7 @@ const Resume = () => {
                 title={"Backend Software Engineer Intern"}
                 subtitle={"At FINN, Operations department"}
                 description={
-                  "Working on internal microservices using Typescript, Make (Integromat) and Retool"
+                  "Working on internal microservices using Typescript, Python, Make (Integromat) and Retool with AWS, Serverless approach"
                 }
                 date={"Feb - Jul 2022"}
                 icon={
@@ -149,10 +149,10 @@ const Resume = () => {
                 }
               />
               <TimelineItem
-                title={"Backend Software Engineer"}
+                title={"Backend Software Engineer (L1)"}
                 subtitle={"At FINN, Fleet department"}
                 description={
-                  "Working on internal microservices using Typescript, Python and Make (Integromat)"
+                  "Working on internal microservices using Typescript, Python and Make (Integromat) and Retool with AWS, Serverless approach"
                 }
                 date={"Aug 2022 - present"}
                 icon={

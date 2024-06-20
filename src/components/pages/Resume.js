@@ -154,7 +154,7 @@ const Resume = () => {
                 description={
                   "Working on internal microservices using Typescript, Python and Make (Integromat) and Retool with AWS, Serverless approach"
                 }
-                date={"Aug 2022 - present"}
+                date={"Aug 2022 - Apr 2023"}
                 icon={
                   <Icon name={"code"} color={"black"} size={"big"} fitted />
                 }

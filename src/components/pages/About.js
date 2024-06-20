@@ -19,8 +19,8 @@ const About = () => {
       <Grid.Row>
         <Grid.Column>
           <p>
-            My name is Jakub Žák and I am a technology enthusiast specializing
-            in backend software development based in Munich, Germany.
+            My name is Jakub Zak and I am a technology enthusiast specializing
+            in backend software development located in Munich, Germany.
             <br />
             Currently, I am working as a Backend Software Engineer within the
             Fleet department at&nbsp;

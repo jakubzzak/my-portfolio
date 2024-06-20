@@ -159,6 +159,28 @@ const Resume = () => {
                   <Icon name={"code"} color={"black"} size={"big"} fitted />
                 }
               />
+              <TimelineItem
+                title={"Head of Tech"}
+                subtitle={"At Graitor, Aalborg - remote"}
+                description={
+                  "Migrating the existing, maintenance heavy, infrastructure to AWS, TS & PostgreSql"
+                }
+                date={"Jan 2023 - present"}
+                icon={
+                  <Icon name={"code"} color={"black"} size={"big"} fitted />
+                }
+              />
+              <TimelineItem
+                title={"Backend Software Engineer (L2)"}
+                subtitle={"At FINN, Fleet department"}
+                description={
+                  "Main tech DRI of pricing, invoicing, EPD (expected payment date) along with an extensive no-code to pro-code infrastructure migration"
+                }
+                date={"May 2023 - present"}
+                icon={
+                  <Icon name={"code"} color={"black"} size={"big"} fitted />
+                }
+              />
             </VerticalTimeline>
           </Grid.Column>
         </Grid.Row>
